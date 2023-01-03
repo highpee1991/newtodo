@@ -1,0 +1,27 @@
+.data {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.complete {
+  color: rgba(177, 177, 177, 0.74);
+  text-decoration: line-through;
+}
+
+.uncomplete {
+  color: rgb(0, 0, 0);
+}
+
+.check {
+  margin-right: 1rem;
+}
+
+.todoList-value {
+  max-width: 20rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

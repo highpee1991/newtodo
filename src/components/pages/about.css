@@ -1,0 +1,19 @@
+.about-wrapper {
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  max-width: 24rem;
+  color: black;
+}
+
+.about-title {
+  margin-bottom: 2rem;
+}
+
+.about-this-app {
+  color: rgb(207, 93, 93);
+  text-transform: uppercase;
+}
+
+.abt {
+  font-size: 1.2rem;
+}

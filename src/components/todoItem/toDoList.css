@@ -1,0 +1,30 @@
+.delete {
+  color: red;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.btn-clear {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  color: rgb(1, 41, 87);
+  border-color: rgba(128, 128, 128, 0.349);
+  outline: none;
+}
+
+.btn-clear:hover {
+  color: red;
+  border: 0.2px solid rgba(228, 0, 0, 0.26);
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-clear {
+  max-width: 15rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}

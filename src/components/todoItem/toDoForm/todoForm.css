@@ -1,0 +1,17 @@
+.input {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  color: rgb(1, 41, 87);
+  outline: none;
+  border: 1px solid rgb(207, 93, 93);
+}
+
+.btn {
+  color: rgb(1, 41, 87);
+  font-size: 1.7rem;
+  position: relative;
+  top: 0.13rem;
+  margin-left: 0.4rem;
+}
