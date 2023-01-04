@@ -8,7 +8,7 @@ import "./home.css";
 
 function Home() {
   const [toDoList, setTodoList] = useState(
-    JSON.parse(localStorage.getItem("toDoListItem")) || []
+    JSON.parse(localStorage.getItem("toDoListItem")) || dummyData
   );
   const [userInput, setUserInput] = useState("");
 
