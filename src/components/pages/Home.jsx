@@ -49,9 +49,6 @@ function Home() {
 
   return (
     <div className="main-wrapper">
-      {/* <div className="side-view">
-        <SideBar />
-      </div> */}
       <div className="main-view">
         <div className="main-input">
           <Header />

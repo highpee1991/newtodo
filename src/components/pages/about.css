@@ -17,3 +17,17 @@
 .abt {
   font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 700px) {
+  .about-wrapper {
+    width: 12rem;
+  }
+
+  .abt {
+    font-size: 0.9rem;
+  }
+
+  .about-this-app {
+    font-size: 1rem;
+  }
+}

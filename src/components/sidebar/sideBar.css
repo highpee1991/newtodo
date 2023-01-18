@@ -1,13 +1,15 @@
-.side-bar {
-  max-width: 15rem;
-  height: 100vh;
+.side-bar-wraper {
   background-color: rgba(207, 93, 93, 0.521);
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.side-bar {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 3rem;
-  padding: 0 5rem;
-  padding-top: 1.3rem;
 }
 
 .sidebar-title {
@@ -15,6 +17,10 @@
   font-size: 1.2rem;
   color: rgb(1, 41, 87);
   cursor: pointer;
+}
+
+.title:hover {
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 
 .active {
@@ -39,4 +45,48 @@
 
 .non-active-logo {
   color: rgb(221, 221, 221);
+}
+
+@media only screen and (max-width: 700px) {
+  .side-bar-wraper {
+    width: 8rem;
+  }
+
+  .sidebar-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .side-bar-wraper {
+    width: 100vw;
+    height: 4rem;
+  }
+
+  .side-bar {
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .sidebar-title {
+    margin-bottom: 0;
+  }
+
+  .active {
+    bottom: 0.12rem;
+    left: 0.1rem;
+  }
+
+  .non-active {
+    bottom: 0.12rem;
+  }
+
+  .sidebar-title {
+    margin-left: 0.9rem;
+  }
+
+  .sidebar-title:nth-child(1) {
+    margin-left: 0;
+  }
 }

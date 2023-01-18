@@ -71,7 +71,7 @@ const Newsletter = () => {
           value={newsletterData.repeatPassword}
         />{" "}
         <br />
-        <span>
+        <span className="rad-width">
           <input
             type="checkbox"
             name="subscribe"
