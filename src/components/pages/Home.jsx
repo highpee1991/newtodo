@@ -5,11 +5,13 @@ import dummyData from "../dummyData";
 import { useState, useEffect } from "react";
 import ToDoForm from "../todoItem/toDoForm/ToDoForm";
 import "./home.css";
+import uuid from "react-uuid";
 
 function Home() {
   const [toDoList, setTodoList] = useState(
     JSON.parse(localStorage.getItem("toDoListItem")) || dummyData
   );
+
   const [userInput, setUserInput] = useState("");
 
   useEffect(() => {
@@ -40,10 +42,7 @@ function Home() {
   const addTask = () => {
     let copy = [...toDoList];
 
-    copy = [
-      ...copy,
-      { id: toDoList.length + 1, value: userInput, completed: false },
-    ];
+    copy = [...copy, { id: uuid(), value: userInput, completed: false }];
     setTodoList(copy);
   };
 
